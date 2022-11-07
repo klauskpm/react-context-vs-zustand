@@ -1,9 +1,5 @@
 function ChildComp() {
-  return (
-    <p>
-      Edit <code>src/App.tsx</code> and save to test HMR
-    </p>
-  );
+  return <p>Child component</p>;
 }
 
 export default ChildComp;

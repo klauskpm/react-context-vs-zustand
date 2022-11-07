@@ -7,14 +7,11 @@ function Page({ children }) {
   return (
     <>
       <div className="App">
-        <h1>Not Vite + React</h1>
+        <h1>React</h1>
         <div className="card">
           {children}
           <ChildComp />
         </div>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
-        </p>
       </div>
       <SiblingComp />
     </>

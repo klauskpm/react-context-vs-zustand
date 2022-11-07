@@ -1,5 +1,5 @@
 function SiblingComp() {
-  return <p>Another text</p>;
+  return <p>Sibling component</p>;
 }
 
 export default SiblingComp;
