@@ -1,10 +1,10 @@
-import CounterShower from '../components/CounterShower';
+import CounterDisplayer from '../components/CounterDisplayer';
 import { useCount } from './Store';
 
 function Counter() {
   const count = useCount();
 
-  return <CounterShower count={count} />;
+  return <CounterDisplayer count={count} />;
 }
 
 export default Counter;
