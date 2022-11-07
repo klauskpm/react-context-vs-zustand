@@ -1,3 +1,5 @@
+import Counter from './Counter';
+import Increaser from './Increaser';
 import { useCount, useIncreaseCount } from './Store';
 
 function Main() {
@@ -7,7 +9,8 @@ function Main() {
   return (
     <>
       <p>Simpler Context</p>
-      <button onClick={() => increaseCount()}>count is {count}</button>
+      <Increaser />
+      <Counter />
     </>
   );
 }
