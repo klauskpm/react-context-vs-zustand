@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { createContext, useContextSelector } from 'use-context-selector';
 
 function useStore() {
@@ -6,8 +6,8 @@ function useStore() {
 
   return {
     count,
-    increaseCount: (num = 1) => setCount(count + num),
-    decreaseCount: (num = 1) => setCount(count - num),
+    increaseCount: useCallback((num = 1) => setCount((c) => c + num), []),
+    decreaseCount: useCallback((num = 1) => setCount((c) => c - num), []),
   };
 }
 
