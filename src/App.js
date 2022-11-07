@@ -1,5 +1,20 @@
+import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  const increaseCount = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <>
+      <button onClick={() => increaseCount()}>Increase count</button>
+      <p>Count: {count}</p>
+    </>
+  )
+}
 
 function App() {
   return (
@@ -9,6 +24,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Counter />
         <a
           className="App-link"
           href="https://reactjs.org"
