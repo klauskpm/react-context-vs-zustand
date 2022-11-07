@@ -23,6 +23,14 @@ export function decreaseCount() {
   return { type: 'DECREASE', payload: 1 };
 }
 
+export function login() {
+  return { type: 'LOGIN', payload: 'klaus' };
+}
+
+export function logout() {
+  return { type: 'LOGOUT', payload: '' };
+}
+
 function reducer(state, action) {
   switch (action.type) {
     case 'INCREASE':
@@ -37,6 +45,18 @@ function reducer(state, action) {
         count: state.count - action.payload,
       };
 
+    case 'LOGIN':
+      return {
+        ...state,
+        user: action.payload
+      };
+
+    case 'LOGOUT':
+      return {
+        ...state,
+        user: action.payload
+      };
+
     default:
       return state;
   }
@@ -44,6 +64,7 @@ function reducer(state, action) {
 
 const myState = {
   count: 0,
+  user: ''
 };
 
 export function ContextProvider({ children }) {
