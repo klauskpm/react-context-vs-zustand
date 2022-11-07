@@ -1,10 +1,13 @@
+import Page from '../components/Page';
 import { ContextProvider } from './Store';
 import Main from './Main';
 
 function NormalContext() {
   return (
     <ContextProvider>
-      <Main />
+      <Page>
+        <Main />
+      </Page>
     </ContextProvider>
   );
 }
