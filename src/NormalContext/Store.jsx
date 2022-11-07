@@ -3,11 +3,11 @@ import React, { createContext, useContext, useReducer } from 'react';
 const DispatchContext = createContext({});
 const StateContext = createContext({});
 
-function useContextDispatch() {
+export function useContextDispatch() {
   return useContext(DispatchContext);
 }
 
-function useContextState() {
+export function useContextState() {
   return useContext(StateContext);
 }
 

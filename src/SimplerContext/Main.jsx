@@ -1,10 +1,7 @@
 import Counter from './Counter';
 import Increaser from './Increaser';
-import { useCount, useIncreaseCount } from './Store';
 
 function Main() {
-  const count = useCount();
-  const increaseCount = useIncreaseCount();
 
   return (
     <>

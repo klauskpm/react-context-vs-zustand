@@ -1,14 +1,12 @@
-import { useMyContext, increaseCount } from './Store';
+import Counter from './Counter';
+import Increaser from './Increaser';
 
 function Main() {
-  const [state, dispatch] = useMyContext();
-
   return (
     <>
       <p>Normal Context</p>
-      <button onClick={() => dispatch(increaseCount())}>
-        count is {state.count}
-      </button>
+      <Increaser />
+      <Counter />
     </>
   );
 }
