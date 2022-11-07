@@ -14,8 +14,9 @@ function useStore() {
 const StoreContext = createContext(null);
 
 export function ContextProvider({ children }) {
+  const store = useStore();
   return (
-    <StoreContext.Provider value={useStore()}>{children}</StoreContext.Provider>
+    <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
   );
 }
 
