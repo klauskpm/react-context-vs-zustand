@@ -1,14 +1,13 @@
-import { useCount, useIncreaseCount } from './Store';
+import Counter from './Counter';
+import Increaser from './Increaser';
 
 
 function Main() {
-  const count = useCount();
-  const increaseCount = useIncreaseCount();
-
   return (
     <>
       <p>Zustand</p>
-      <button onClick={() => increaseCount()}>count is {count}</button>
+      <Increaser />
+      <Counter />
     </>
   );
 }
