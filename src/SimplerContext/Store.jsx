@@ -6,8 +6,8 @@ function useStore() {
 
   return {
     count,
-    increaseCount: useCallback((num = 1) => setCount((c) => c + num), []),
-    decreaseCount: useCallback((num = 1) => setCount((c) => c - num), []),
+    increaseCount: useCallback((num = 1) => setCount(count + num), [count]),
+    decreaseCount: useCallback((num = 1) => setCount(count - num), [count]),
   };
 }
 
