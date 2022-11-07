@@ -1,10 +1,10 @@
-import CounterDisplayer from '../components/CounterDisplayer';
+import DisplayCounter from '../components/Counter';
 import { useCount } from './Store';
 
 function Counter() {
   const count = useCount();
 
-  return <CounterDisplayer count={count} />;
+  return <DisplayCounter count={count} />;
 }
 
 export default Counter;

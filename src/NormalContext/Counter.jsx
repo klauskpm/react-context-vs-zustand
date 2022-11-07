@@ -1,10 +1,10 @@
-import CounterDisplayer from '../components/CounterDisplayer';
+import DisplayCounter from '../components/Counter';
 import { useContextState } from './Store';
 
 function Counter() {
   const state = useContextState();
 
-  return <CounterDisplayer count={state.count} />;
+  return <DisplayCounter count={state.count} />;
 }
 
 export default Counter;
