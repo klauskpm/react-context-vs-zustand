@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "analyze": "npm run build && source-map-explorer build/static/js/*.js --html result.html"
+    "analyze": "npm run build && source-map-explorer build/static/js/*.js --html packages-analyze/result.html"
   },
   "eslintConfig": {
     "extends": [

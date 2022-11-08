@@ -4,6 +4,7 @@ import './index.css';
 import App from './NormalContext'
 // import App from './SimplerContext'
 // import App from './Zustand'
+// import App from './ZustandMiddlewares'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
