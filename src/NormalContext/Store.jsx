@@ -31,6 +31,10 @@ export function logout() {
   return { type: 'SET_USER', payload: '' };
 }
 
+export function searchTitle(title) {
+  return { type: 'SET_SEARCH_TITLE', payload: title };
+}
+
 function reducer(state, action) {
   switch (action.type) {
     case 'ADD_TO_COUNT':
@@ -45,6 +49,15 @@ function reducer(state, action) {
         user: action.payload
       };
 
+    case 'SET_SEARCH_TITLE':
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          title: action.payload
+        }
+      };
+
     default:
       return state;
   }
@@ -52,7 +65,11 @@ function reducer(state, action) {
 
 const myState = {
   count: 0,
-  user: ''
+  user: '',
+  filters: {
+    unchanged: 'unchanged value',
+    title: ''
+  }
 };
 
 export function ContextProvider({ children }) {
