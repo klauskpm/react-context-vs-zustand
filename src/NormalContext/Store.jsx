@@ -16,42 +16,30 @@ export function useMyContext() {
 }
 
 export function increaseCount() {
-  return { type: 'INCREASE', payload: 1 };
+  return { type: 'ADD_TO_COUNT', payload: 1 };
 }
 
 export function decreaseCount() {
-  return { type: 'DECREASE', payload: 1 };
+  return { type: 'ADD_TO_COUNT', payload: -1 };
 }
 
 export function login() {
-  return { type: 'LOGIN', payload: 'klaus' };
+  return { type: 'SET_USER', payload: 'klaus' };
 }
 
 export function logout() {
-  return { type: 'LOGOUT', payload: '' };
+  return { type: 'SET_USER', payload: '' };
 }
 
 function reducer(state, action) {
   switch (action.type) {
-    case 'INCREASE':
+    case 'ADD_TO_COUNT':
       return {
         ...state,
         count: state.count + action.payload,
       };
 
-    case 'DECREASE':
-      return {
-        ...state,
-        count: state.count - action.payload,
-      };
-
-    case 'LOGIN':
-      return {
-        ...state,
-        user: action.payload
-      };
-
-    case 'LOGOUT':
+    case 'SET_USER':
       return {
         ...state,
         user: action.payload
