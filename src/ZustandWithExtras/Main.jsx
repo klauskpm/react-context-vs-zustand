@@ -8,10 +8,7 @@ import { useFilteredTitle, useSearchTitle, useComposedValue } from './Store';
 function SearchInput() {
   const searchTitle = useSearchTitle();
 
-  return <input onInput={(e) => {
-    console.log(e.target.value);
-    searchTitle(e.target.value)
-  }}/>;
+  return <input onInput={(e) => searchTitle(e.target.value)}/>;
 }
 
 function Title() {
@@ -21,12 +18,12 @@ function Title() {
 }
 
 function ComplexValue() {
-  const { filteredTitle, count } = useComposedValue();
+  const { unchanged, count } = useComposedValue();
   return (
     <div>
       <p>Complex value:</p>
       <ul>
-        <li>{filteredTitle}</li>
+        <li>{unchanged}</li>
         <li>{count}</li>
       </ul>
     </div>

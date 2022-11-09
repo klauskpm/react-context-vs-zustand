@@ -1,4 +1,5 @@
 import create  from 'zustand';
+import shallow  from 'zustand/shallow';
 import { immer } from 'zustand/middleware/immer';
 import { devtools } from 'zustand/middleware';
 
@@ -12,7 +13,8 @@ const useStore = create(devtools(immer((set) => ({
   logout: () => set({ user: '' }, false, 'logout'),
 
   filters: {
-    title: ''
+    title: '',
+    unchanged: 'unchanged value'
   },
   searchTitle: (title) => set(
     (state) => { state.filters.title = title },
@@ -33,6 +35,6 @@ export const useFilteredTitle = () => useStore((state) => state.filters.title);
 export const useSearchTitle = () => useStore((state) => state.searchTitle);
 
 export const useComposedValue = () => useStore((state) => ({
-  filteredTitle: state.filters.title,
+  unchanged: state.filters.unchanged,
   count: state.count
-}));
+}), shallow);
