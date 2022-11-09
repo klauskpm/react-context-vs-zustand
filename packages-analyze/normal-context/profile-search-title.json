@@ -1,0 +1,1088 @@
+{
+  "version": 5,
+  "dataForRoots": [
+    {
+      "commitData": [
+        {
+          "changeDescriptions": [
+            [
+              17,
+              {
+                "context": null,
+                "didHooksChange": false,
+                "isFirstMount": false,
+                "props": [],
+                "state": null,
+                "hooks": null
+              }
+            ],
+            [
+              16,
+              {
+                "context": true,
+                "didHooksChange": false,
+                "isFirstMount": false,
+                "props": [],
+                "state": null,
+                "hooks": null
+              }
+            ],
+            [
+              27,
+              {
+                "context": null,
+                "didHooksChange": false,
+                "isFirstMount": false,
+                "props": [],
+                "state": null,
+                "hooks": null
+              }
+            ],
+            [
+              26,
+              {
+                "context": true,
+                "didHooksChange": false,
+                "isFirstMount": false,
+                "props": [],
+                "state": null,
+                "hooks": null
+              }
+            ],
+            [
+              34,
+              {
+                "context": null,
+                "didHooksChange": false,
+                "isFirstMount": false,
+                "props": [
+                  "title"
+                ],
+                "state": null,
+                "hooks": null
+              }
+            ],
+            [
+              33,
+              {
+                "context": true,
+                "didHooksChange": false,
+                "isFirstMount": false,
+                "props": [],
+                "state": null,
+                "hooks": null
+              }
+            ],
+            [
+              38,
+              {
+                "context": null,
+                "didHooksChange": false,
+                "isFirstMount": false,
+                "props": [],
+                "state": null,
+                "hooks": null
+              }
+            ],
+            [
+              37,
+              {
+                "context": true,
+                "didHooksChange": false,
+                "isFirstMount": false,
+                "props": [],
+                "state": null,
+                "hooks": null
+              }
+            ],
+            [
+              4,
+              {
+                "context": null,
+                "didHooksChange": true,
+                "isFirstMount": false,
+                "props": [],
+                "state": null,
+                "hooks": [
+                  0
+                ]
+              }
+            ]
+          ],
+          "duration": 3,
+          "effectDuration": null,
+          "fiberActualDurations": [
+            [
+              17,
+              0.6000000238418579
+            ],
+            [
+              16,
+              0.6000000238418579
+            ],
+            [
+              27,
+              0
+            ],
+            [
+              26,
+              0.09999996423721313
+            ],
+            [
+              34,
+              0.10000002384185791
+            ],
+            [
+              33,
+              0.20000004768371582
+            ],
+            [
+              38,
+              0.30000001192092896
+            ],
+            [
+              37,
+              0.5
+            ],
+            [
+              6,
+              1.600000023841858
+            ],
+            [
+              5,
+              2.100000023841858
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "fiberSelfDurations": [
+            [
+              17,
+              0.19999998807907104
+            ],
+            [
+              16,
+              0
+            ],
+            [
+              27,
+              0
+            ],
+            [
+              26,
+              0.09999996423721313
+            ],
+            [
+              34,
+              0.10000002384185791
+            ],
+            [
+              33,
+              0.10000002384185791
+            ],
+            [
+              38,
+              0
+            ],
+            [
+              37,
+              0.19999998807907104
+            ],
+            [
+              6,
+              0.09999996423721313
+            ],
+            [
+              5,
+              0.5
+            ],
+            [
+              4,
+              0.8999999761581421
+            ]
+          ],
+          "passiveEffectDuration": null,
+          "priorityLevel": "Immediate",
+          "timestamp": 2269.199999988079,
+          "updaters": [
+            {
+              "displayName": "ContextProvider",
+              "id": 4,
+              "key": null,
+              "type": 5,
+              "hocDisplayNames": null
+            }
+          ]
+        }
+      ],
+      "displayName": "NormalContext",
+      "initialTreeBaseDurations": [
+        [
+          1,
+          2.7999998927116394
+        ],
+        [
+          3,
+          2.1999998688697815
+        ],
+        [
+          4,
+          1.6999998688697815
+        ],
+        [
+          5,
+          1.5999999046325684
+        ],
+        [
+          6,
+          1.5999999046325684
+        ],
+        [
+          7,
+          1.5999999046325684
+        ],
+        [
+          11,
+          0.9999999403953552
+        ],
+        [
+          13,
+          0.19999998807907104
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0.10000002384185791
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          21,
+          0.19999998807907104
+        ],
+        [
+          22,
+          0.09999996423721313
+        ],
+        [
+          26,
+          0.10000002384185791
+        ],
+        [
+          27,
+          0
+        ],
+        [
+          30,
+          0.09999996423721313
+        ],
+        [
+          31,
+          0
+        ],
+        [
+          33,
+          0.19999998807907104
+        ],
+        [
+          34,
+          0.10000002384185791
+        ],
+        [
+          37,
+          0
+        ],
+        [
+          38,
+          0
+        ],
+        [
+          44,
+          0.09999996423721313
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "operations": [
+        [
+          1,
+          1,
+          0,
+          4,
+          17,
+          300,
+          4,
+          16,
+          300,
+          4,
+          26,
+          99,
+          4,
+          33,
+          200,
+          4,
+          38,
+          300,
+          4,
+          37,
+          500,
+          4,
+          11,
+          1699,
+          4,
+          7,
+          2299,
+          4,
+          6,
+          2299,
+          4,
+          5,
+          2799,
+          4,
+          4,
+          3699,
+          4,
+          3,
+          4199,
+          4,
+          1,
+          4799
+        ]
+      ],
+      "rootID": 1,
+      "snapshots": [
+        [
+          1,
+          {
+            "id": 1,
+            "children": [
+              3
+            ],
+            "displayName": null,
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 11
+          }
+        ],
+        [
+          3,
+          {
+            "id": 3,
+            "children": [
+              4
+            ],
+            "displayName": "NormalContext",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          4,
+          {
+            "id": 4,
+            "children": [
+              5
+            ],
+            "displayName": "ContextProvider",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          5,
+          {
+            "id": 5,
+            "children": [
+              6
+            ],
+            "displayName": "Context.Provider",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 2
+          }
+        ],
+        [
+          6,
+          {
+            "id": 6,
+            "children": [
+              7
+            ],
+            "displayName": "Context.Provider",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 2
+          }
+        ],
+        [
+          7,
+          {
+            "id": 7,
+            "children": [
+              11,
+              44,
+              46
+            ],
+            "displayName": "Page",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          11,
+          {
+            "id": 11,
+            "children": [
+              13,
+              16,
+              21,
+              26,
+              30,
+              33,
+              37
+            ],
+            "displayName": "Main",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          13,
+          {
+            "id": 13,
+            "children": [
+              14
+            ],
+            "displayName": "Increaser",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          14,
+          {
+            "id": 14,
+            "children": [],
+            "displayName": "IncreaseCounterButton",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          16,
+          {
+            "id": 16,
+            "children": [
+              17
+            ],
+            "displayName": "Counter",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          17,
+          {
+            "id": 17,
+            "children": [],
+            "displayName": "Counter",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          21,
+          {
+            "id": 21,
+            "children": [
+              22
+            ],
+            "displayName": "UserButtons",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          22,
+          {
+            "id": 22,
+            "children": [],
+            "displayName": "LogInOutButtons",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          26,
+          {
+            "id": 26,
+            "children": [
+              27
+            ],
+            "displayName": "User",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          27,
+          {
+            "id": 27,
+            "children": [],
+            "displayName": "User",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          30,
+          {
+            "id": 30,
+            "children": [
+              31
+            ],
+            "displayName": "SearchInput",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          31,
+          {
+            "id": 31,
+            "children": [],
+            "displayName": "SearchInput",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          33,
+          {
+            "id": 33,
+            "children": [
+              34
+            ],
+            "displayName": "Title",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          34,
+          {
+            "id": 34,
+            "children": [],
+            "displayName": "Title",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          37,
+          {
+            "id": 37,
+            "children": [
+              38
+            ],
+            "displayName": "ComplexValues",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          38,
+          {
+            "id": 38,
+            "children": [],
+            "displayName": "ComplexValues",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          44,
+          {
+            "id": 44,
+            "children": [],
+            "displayName": "ChildComp",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ],
+        [
+          46,
+          {
+            "id": 46,
+            "children": [],
+            "displayName": "SiblingComp",
+            "hocDisplayNames": null,
+            "key": null,
+            "type": 5
+          }
+        ]
+      ]
+    }
+  ],
+  "timelineData": [
+    {
+      "batchUIDToMeasuresKeyValueArray": [
+        [
+          1,
+          [
+            {
+              "type": "render-idle",
+              "batchUID": 1,
+              "depth": 0,
+              "lanes": [
+                1
+              ],
+              "timestamp": 10.400000035762787,
+              "duration": 6.399999976158142
+            },
+            {
+              "type": "render",
+              "batchUID": 1,
+              "depth": 0,
+              "lanes": [
+                1
+              ],
+              "timestamp": 10.400000035762787,
+              "duration": 3.599999964237213
+            },
+            {
+              "type": "commit",
+              "batchUID": 1,
+              "depth": 0,
+              "lanes": [
+                1
+              ],
+              "timestamp": 14.100000023841858,
+              "duration": 2.699999988079071
+            },
+            {
+              "type": "layout-effects",
+              "batchUID": 1,
+              "depth": 1,
+              "lanes": [
+                1
+              ],
+              "timestamp": 14.5,
+              "duration": 0
+            }
+          ]
+        ]
+      ],
+      "componentMeasures": [
+        {
+          "componentName": "ContextProvider",
+          "duration": 0.699999988079071,
+          "timestamp": 11,
+          "type": "render",
+          "warning": null
+        },
+        {
+          "componentName": "Counter",
+          "duration": 0,
+          "timestamp": 12.5,
+          "type": "render",
+          "warning": null
+        },
+        {
+          "componentName": "Counter",
+          "duration": 0.19999998807907104,
+          "timestamp": 12.5,
+          "type": "render",
+          "warning": null
+        },
+        {
+          "componentName": "User",
+          "duration": 0.09999996423721313,
+          "timestamp": 13.100000023841858,
+          "type": "render",
+          "warning": null
+        },
+        {
+          "componentName": "User",
+          "duration": 0,
+          "timestamp": 13.199999988079071,
+          "type": "render",
+          "warning": null
+        },
+        {
+          "componentName": "Title",
+          "duration": 0,
+          "timestamp": 13.300000011920929,
+          "type": "render",
+          "warning": null
+        },
+        {
+          "componentName": "Title",
+          "duration": 0,
+          "timestamp": 13.400000035762787,
+          "type": "render",
+          "warning": null
+        },
+        {
+          "componentName": "ComplexValues",
+          "duration": 0.19999998807907104,
+          "timestamp": 13.400000035762787,
+          "type": "render",
+          "warning": null
+        },
+        {
+          "componentName": "ComplexValues",
+          "duration": 0,
+          "timestamp": 13.600000023841858,
+          "type": "render",
+          "warning": null
+        }
+      ],
+      "duration": 26.80000001192093,
+      "flamechart": [],
+      "internalModuleSourceToRanges": [],
+      "laneToLabelKeyValueArray": [
+        [
+          1,
+          "Sync"
+        ],
+        [
+          2,
+          "InputContinuousHydration"
+        ],
+        [
+          4,
+          "InputContinuous"
+        ],
+        [
+          8,
+          "DefaultHydration"
+        ],
+        [
+          16,
+          "Default"
+        ],
+        [
+          32,
+          "TransitionHydration"
+        ],
+        [
+          64,
+          "Transition"
+        ],
+        [
+          128,
+          "Transition"
+        ],
+        [
+          256,
+          "Transition"
+        ],
+        [
+          512,
+          "Transition"
+        ],
+        [
+          1024,
+          "Transition"
+        ],
+        [
+          2048,
+          "Transition"
+        ],
+        [
+          4096,
+          "Transition"
+        ],
+        [
+          8192,
+          "Transition"
+        ],
+        [
+          16384,
+          "Transition"
+        ],
+        [
+          32768,
+          "Transition"
+        ],
+        [
+          65536,
+          "Transition"
+        ],
+        [
+          131072,
+          "Transition"
+        ],
+        [
+          262144,
+          "Transition"
+        ],
+        [
+          524288,
+          "Transition"
+        ],
+        [
+          1048576,
+          "Transition"
+        ],
+        [
+          2097152,
+          "Transition"
+        ],
+        [
+          4194304,
+          "Retry"
+        ],
+        [
+          8388608,
+          "Retry"
+        ],
+        [
+          16777216,
+          "Retry"
+        ],
+        [
+          33554432,
+          "Retry"
+        ],
+        [
+          67108864,
+          "Retry"
+        ],
+        [
+          134217728,
+          "SelectiveHydration"
+        ],
+        [
+          268435456,
+          "IdleHydration"
+        ],
+        [
+          536870912,
+          "Idle"
+        ],
+        [
+          1073741824,
+          "Offscreen"
+        ]
+      ],
+      "laneToReactMeasureKeyValueArray": [
+        [
+          1,
+          [
+            {
+              "type": "render-idle",
+              "batchUID": 1,
+              "depth": 0,
+              "lanes": [
+                1
+              ],
+              "timestamp": 10.400000035762787,
+              "duration": 6.399999976158142
+            },
+            {
+              "type": "render",
+              "batchUID": 1,
+              "depth": 0,
+              "lanes": [
+                1
+              ],
+              "timestamp": 10.400000035762787,
+              "duration": 3.599999964237213
+            },
+            {
+              "type": "commit",
+              "batchUID": 1,
+              "depth": 0,
+              "lanes": [
+                1
+              ],
+              "timestamp": 14.100000023841858,
+              "duration": 2.699999988079071
+            },
+            {
+              "type": "layout-effects",
+              "batchUID": 1,
+              "depth": 1,
+              "lanes": [
+                1
+              ],
+              "timestamp": 14.5,
+              "duration": 0
+            }
+          ]
+        ],
+        [
+          2,
+          []
+        ],
+        [
+          4,
+          []
+        ],
+        [
+          8,
+          []
+        ],
+        [
+          16,
+          []
+        ],
+        [
+          32,
+          []
+        ],
+        [
+          64,
+          []
+        ],
+        [
+          128,
+          []
+        ],
+        [
+          256,
+          []
+        ],
+        [
+          512,
+          []
+        ],
+        [
+          1024,
+          []
+        ],
+        [
+          2048,
+          []
+        ],
+        [
+          4096,
+          []
+        ],
+        [
+          8192,
+          []
+        ],
+        [
+          16384,
+          []
+        ],
+        [
+          32768,
+          []
+        ],
+        [
+          65536,
+          []
+        ],
+        [
+          131072,
+          []
+        ],
+        [
+          262144,
+          []
+        ],
+        [
+          524288,
+          []
+        ],
+        [
+          1048576,
+          []
+        ],
+        [
+          2097152,
+          []
+        ],
+        [
+          4194304,
+          []
+        ],
+        [
+          8388608,
+          []
+        ],
+        [
+          16777216,
+          []
+        ],
+        [
+          33554432,
+          []
+        ],
+        [
+          67108864,
+          []
+        ],
+        [
+          134217728,
+          []
+        ],
+        [
+          268435456,
+          []
+        ],
+        [
+          536870912,
+          []
+        ],
+        [
+          1073741824,
+          []
+        ]
+      ],
+      "nativeEvents": [],
+      "networkMeasures": [],
+      "otherUserTimingMarks": [],
+      "reactVersion": "18.2.0",
+      "schedulingEvents": [
+        {
+          "componentName": "ContextProvider",
+          "lanes": [
+            1
+          ],
+          "timestamp": 10,
+          "type": "schedule-state-update",
+          "warning": null,
+          "componentStack": "\n    at ContextProvider (https://react-context-vs-zustand--3000.local-credentialless.webcontainer.io/static/js/bundle.js:529:5)\n    at NormalContext"
+        }
+      ],
+      "snapshots": [],
+      "snapshotHeight": 0,
+      "startTime": 6091.300000011921,
+      "suspenseEvents": [],
+      "thrownErrors": []
+    }
+  ]
+}
