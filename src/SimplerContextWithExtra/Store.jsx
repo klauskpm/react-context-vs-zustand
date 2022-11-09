@@ -1,9 +1,15 @@
 import { useState, useCallback } from 'react';
 import { createContext, useContextSelector } from 'use-context-selector';
 
+const initialState = {
+  title: '',
+  unchanged: 'unchanged value'
+};
+
 function useStore() {
   const [count, setCount] = useState(0);
   const [user, setUser] = useState('');
+  const [filters, setFilters] = useState(initialState);
 
   return {
     count,
@@ -12,7 +18,10 @@ function useStore() {
 
     user,
     login: useCallback((user = 'klaus') => setUser(user), []),
-    logout: useCallback(() => setUser(''), [])
+    logout: useCallback(() => setUser(''), []),
+
+    filters,
+    searchTitle: useCallback((title) => setFilters((filters) => ({ ...filters, title })), [])
   };
 }
 
@@ -32,3 +41,11 @@ export const useDecreaseCount = () => useContextSelector(StoreContext, (state) =
 export const useUser = () => useContextSelector(StoreContext, (state) => state.user);
 export const useLogin = () => useContextSelector(StoreContext, (state) => state.login);
 export const useLogout = () => useContextSelector(StoreContext, (state) => state.logout);
+
+export const useFilteredTitle = () => useContextSelector(StoreContext, (state) => state.filters.title);
+export const useSearchTitle = () => useContextSelector(StoreContext, (state) => state.searchTitle);
+
+export const useComposedValue = () => useContextSelector(StoreContext, (state) => ({
+  unchanged: state.filters.unchanged,
+  count: state.count
+}));
