@@ -1,5 +1,4 @@
-import { useState, useCallback } from 'react';
-import { createContext, useContextSelector } from 'use-context-selector';
+import { useState, useCallback, createContext, useContext } from 'react';
 
 function useStore() {
   const [count, setCount] = useState(0);
@@ -25,10 +24,10 @@ export function ContextProvider({ children }) {
   );
 }
 
-export const useCount = () => useContextSelector(StoreContext, (state) => state.count);
-export const useIncreaseCount = () => useContextSelector(StoreContext, (state) => state.increaseCount);
-export const useDecreaseCount = () => useContextSelector(StoreContext, (state) => state.decreaseCount);
+export const useCount = () => useContext(StoreContext).count;
+export const useIncreaseCount = () => useContext(StoreContext).increaseCount;
+export const useDecreaseCount = () => useContext(StoreContext).decreaseCount;
 
-export const useUser = () => useContextSelector(StoreContext, (state) => state.user);
-export const useLogin = () => useContextSelector(StoreContext, (state) => state.login);
-export const useLogout = () => useContextSelector(StoreContext, (state) => state.logout);
+export const useUser = () => useContext(StoreContext).user;
+export const useLogin = () => useContext(StoreContext).login;
+export const useLogout = () => useContext(StoreContext).logout;

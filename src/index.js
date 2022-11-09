@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './NormalContext'
-// import App from './SimplerContext'
+// import App from './NormalContext'
+import App from './SimplerContext'
+// import App from './SimplerContextWithExtra'
 // import App from './Zustand'
 // import App from './ZustandWithExtras'
 import reportWebVitals from './reportWebVitals';
