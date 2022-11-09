@@ -9,7 +9,16 @@ const useStore = create(devtools(immer((set) => ({
 
   user: '',
   login: (user = 'klaus') => set({ user }, false, 'login'),
-  logout: () => set({ user: '' }, false, 'logout')
+  logout: () => set({ user: '' }, false, 'logout'),
+
+  filters: {
+    title: ''
+  },
+  searchTitle: (title) => set(
+    (state) => { state.filters.title = title },
+    false,
+    'searchTitle'
+  )
 }))));
 
 export const useCount = () => useStore((state) => state.count);
@@ -19,3 +28,11 @@ export const useDecreaseCount = () => useStore((state) => state.decreaseCount);
 export const useUser = () => useStore((state) => state.user);
 export const useLogin = () => useStore((state) => state.login);
 export const useLogout = () => useStore((state) => state.logout);
+
+export const useFilteredTitle = () => useStore((state) => state.filters.title);
+export const useSearchTitle = () => useStore((state) => state.searchTitle);
+
+export const useComposedValue = () => useStore((state) => ({
+  filteredTitle: state.filters.title,
+  count: state.count
+}));
