@@ -1,5 +1,9 @@
 # Context vs Zustand test
 
+## Project
+How the app looks?
+![](/public/app-look.png)
+
 ## Normal Context
 This is using a pure context implementation with useReducer.
 
