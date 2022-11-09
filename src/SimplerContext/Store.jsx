@@ -1,8 +1,14 @@
 import { useState, useCallback, createContext, useContext } from 'react';
 
+const initialState = {
+  title: '',
+  unchanged: 'unchanged value'
+};
+
 function useStore() {
   const [count, setCount] = useState(0);
   const [user, setUser] = useState('');
+  const [filters, setFilters] = useState(initialState);
 
   return {
     count,
@@ -11,7 +17,10 @@ function useStore() {
 
     user,
     login: useCallback((user = 'klaus') => setUser(user), []),
-    logout: useCallback(() => setUser(''), [])
+    logout: useCallback(() => setUser(''), []),
+
+    filters,
+    searchTitle: useCallback((title) => setFilters((filters) => ({ ...filters, title })), [])
   };
 }
 
@@ -31,3 +40,14 @@ export const useDecreaseCount = () => useContext(StoreContext).decreaseCount;
 export const useUser = () => useContext(StoreContext).user;
 export const useLogin = () => useContext(StoreContext).login;
 export const useLogout = () => useContext(StoreContext).logout;
+
+export const useFilteredTitle = () => useContext(StoreContext).filters.title;
+export const useSearchTitle = () => useContext(StoreContext).searchTitle;
+
+export const useComposedValue = () => {
+  const state = useContext(StoreContext);
+  return {
+    unchanged: state.filters.unchanged,
+    count: state.count
+  };
+}
