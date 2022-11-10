@@ -10,13 +10,20 @@
 5. Simpler Context (-4 + -4 + 3 + -2 = -7)
 
 
-### By category
+### Categories
 ||1|2|3|4|5|
 |-|-|-|-|-|-|
 |rerenders|Zustand with Extras|Zustand|Simpler Context with Extras|Normal Context|Simpler Context|
 |render time|Zustand|Simpler Context with Extras|Zustand with Extras|Normal Context|Simpler Context|
 |project size|Normal Context|Simpler Context|Zustand|Simpler Context with Extras|Zustand with Extras|
 |DX (store lines)|Zustand|Zustand with Extras|Simpler Context with Extras|Simpler Context|Normal Context|
+
+### Ranking points
+1. 6
+2. 3
+3. 0
+4. -2
+5. -4
 
 ## Tests summaries
 
