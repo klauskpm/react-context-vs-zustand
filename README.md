@@ -1,6 +1,15 @@
 # Context vs Zustand test
 ![](/public/app-look.png)
 
+## Ranking
+
+### By category
+||1|2|3|4|5|
+|-|-|-|-|-|-|
+|rerenders|Zustand with Extras|Zustand|Simpler Context with Extras|Normal Context|Simpler Context|
+|render time|Zustand|Simpler Context with Extras|Zustand with Extras|Normal Context|Simpler Context|
+|project size|Normal Context|Simpler Context|Zustand|Simpler Context with Extras|Zustand with Extras|
+
 ## Tests summaries
 
 Small explanations on what `with Extras` mean:
