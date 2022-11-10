@@ -3,11 +3,11 @@
 
 ## Ranking
 
-1. Zustand (3 + 6 + 0 = 9)
-2. Normal Context (-2 + -2 + 6 = 2) `because it is a native solution`
-3. Zustand with Extras (6 + 0 + -4 = 2)
-4. Simpler Context with Extras (0 + 3 + -2 = 1)
-5. Simpler Context (-4 + -4 + 3 = -5)
+1. Zustand (3 + 6 + 0 + 6 = 15)
+2. Zustand with Extras (6 + 0 + -4 + 3 = 5)
+3. Simpler Context with Extras (0 + 3 + -2 + 0 = 1)
+4. Normal Context (-2 + -2 + 6 + -4 = -2)
+5. Simpler Context (-4 + -4 + 3 + -2 = -7)
 
 
 ### By category
@@ -16,6 +16,7 @@
 |rerenders|Zustand with Extras|Zustand|Simpler Context with Extras|Normal Context|Simpler Context|
 |render time|Zustand|Simpler Context with Extras|Zustand with Extras|Normal Context|Simpler Context|
 |project size|Normal Context|Simpler Context|Zustand|Simpler Context with Extras|Zustand with Extras|
+|DX (store lines)|Zustand|Zustand with Extras|Simpler Context with Extras|Simpler Context|Normal Context|
 
 ## Tests summaries
 
@@ -48,6 +49,13 @@ Small explanations on what `with Extras` mean:
 |-|-|-|-|-|-|
 |total|149.16|149.44|151.4|150.64|160.85|
 |extra (-149.16)|0|0.28|2.24|1.48|11.69|
+
+### DX
+As this can be very personal, I'm using the number of lines we need to write to achive the same store.
+
+||Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
+|-|-|-|-|-|-|
+|lines|85|53|51|33|40|
 
 
 ## Normal Context
