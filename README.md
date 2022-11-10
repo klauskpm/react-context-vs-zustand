@@ -20,12 +20,12 @@ Small explanations on what `with Extras` mean:
 |search "a"|10|14|6|4|2|
 |search "a" (excluding context)|7|12|4|4|2|
 
-### Render speed on actions
+### Render speed on actions (is ms)
 ||Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
 |-|-|-|-|-|-|
-|increase count||||||
-|login||||||
-|search "a"||||||
+|increase count|2.1|3.9|1.3|0.9|1.6|
+|login|2.8|4.2|1.2|1.1|1.8|
+|search "a"|3|3.1|0.6|1.2|1.3|
 
 ### "Project" size (in KB)
 |Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
