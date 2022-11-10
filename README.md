@@ -13,16 +13,19 @@ Small explanations on what `with Extras` mean:
 ### Rerenders on actions
 ||Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
 |-|-|-|-|-|-|
-|increase count|||||
-|login|||||
-|search "a"|||||
+|increase count|9|14|8|4|4|
+|increase count (excluding context)|6|12|6|4|4|
+|login|9|16|7|4|2|
+|login (excluding context)|6|14|5|4|2|
+|search "a"|10|14|6|4|2|
+|search "a" (excluding context)|7|12|4|4|2|
 
 ### Render speed on actions
 ||Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
 |-|-|-|-|-|-|
-|increase count|||||
-|login|||||
-|search "a"|||||
+|increase count||||||
+|login||||||
+|search "a"||||||
 
 ### "Project" size (in KB)
 |Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
