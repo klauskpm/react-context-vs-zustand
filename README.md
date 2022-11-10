@@ -25,6 +25,8 @@
 4. -2
 5. -4
 
+----
+
 ## Tests summaries
 
 Small explanations on what `with Extras` mean:
@@ -63,3 +65,12 @@ As this can be very personal, I'm using the number of lines we need to write to 
 ||Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
 |-|-|-|-|-|-|
 |lines|85|53|51|33|40|
+
+----
+
+## Individual profiles
+- [Normal Context](normal-context.md)
+- [Simpler Context](simpler-context.md)
+- [Simpler Context with Extras](simpler-context-with-extras.md)
+- [Zustand](zustand.md)
+- [Zustand with Extras](zustand.md)
