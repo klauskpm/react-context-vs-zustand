@@ -10,7 +10,7 @@
 5. Simpler Context (-4 + -4 + 3 + -2 = -7)
 
 
-### Personal Categories
+### Categories
 ||1|2|3|4|5|
 |-|-|-|-|-|-|
 |rerenders|Zustand with Extras|Zustand|Simpler Context with Extras|Normal Context|Simpler Context|
