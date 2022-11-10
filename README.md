@@ -3,6 +3,13 @@
 
 ## Ranking
 
+1. Zustand (3 + 6 + 0 = 9)
+2. Normal Context (-2 + -2 + 6 = 2) `because it is a native solution`
+3. Zustand with Extras (6 + 0 + -4 = 2)
+4. Simpler Context with Extras (0 + 3 + -2 = 1)
+5. Simpler Context (-4 + -4 + 3 = -5)
+
+
 ### By category
 ||1|2|3|4|5|
 |-|-|-|-|-|-|
