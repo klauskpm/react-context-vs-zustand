@@ -14,11 +14,11 @@ Small explanations on what `with Extras` mean:
 ||Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
 |-|-|-|-|-|-|
 |increase count|9|14|8|4|4|
-|increase count (excluding context)|6|12|6|4|4|
+|increase count (excluding context)|6|12|5|4|4|
 |login|9|16|7|4|2|
-|login (excluding context)|6|14|5|4|2|
+|login (excluding context)|6|14|4|4|2|
 |search "a"|10|14|6|4|2|
-|search "a" (excluding context)|7|12|4|4|2|
+|search "a" (excluding context)|7|12|3|4|2|
 
 ### Render speed on actions (is ms)
 ||Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
@@ -28,9 +28,10 @@ Small explanations on what `with Extras` mean:
 |search "a"|3|3.1|0.6|1.2|1.3|
 
 ### "Project" size (in KB)
-|Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
-|-|-|-|-|-|
-|||||
+||Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
+|-|-|-|-|-|-|
+|total|149.16|149.44|151.4|150.64|160.85|
+|extra (-149.16)|0|0.28|2.24|1.48|11.69|
 
 
 ## Normal Context
