@@ -3,7 +3,7 @@ This is using a pure context implementation, but this time with useState and use
 
 ## Performance by actions
 
-### increase count**
+### increase count
 ![](/packages-analyze/simpler-context/profile-increase-count.png)
 > [Profile file](/packages-analyze/simpler-context/profile-increase-count.json) to upload to React DevTools
 
