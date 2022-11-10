@@ -1,7 +1,7 @@
 # Context vs Zustand test
 ![](/public/app-look.png)
 
-## Ranking
+## Personal Ranking
 
 1. Zustand (3 + 6 + 0 + 6 = 15)
 2. Zustand with Extras (6 + 0 + -4 + 3 = 5)
@@ -10,7 +10,7 @@
 5. Simpler Context (-4 + -4 + 3 + -2 = -7)
 
 
-### Categories
+### Personal Categories
 ||1|2|3|4|5|
 |-|-|-|-|-|-|
 |rerenders|Zustand with Extras|Zustand|Simpler Context with Extras|Normal Context|Simpler Context|
