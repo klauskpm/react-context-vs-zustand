@@ -1,8 +1,34 @@
 # Context vs Zustand test
-
-## Project
-How the app looks?
 ![](/public/app-look.png)
+
+## Tests summaries
+
+Small explanations on what `with Extras` mean:
+- **Simpler Context with Extras** is a simpler context solution using `use-context-selector` to improve rerenders;
+- **Zustand with Extras** is a Zustand solution using its internal middlewares for `immer` and `devtools`, and the `shallow` comparison script
+  - `immer` middleware is to help simplifying our DX when updating complex states
+  - `devtools` middleware is to send the action to Redux DevTools, enabling better debugging and state replayability
+  - `shallow` is an internal function that helps returning complex states doing a shallow comparison
+
+### Rerenders on actions
+||Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
+|-|-|-|-|-|-|
+|increase count|||||
+|login|||||
+|search "a"|||||
+
+### Render speed on actions
+||Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
+|-|-|-|-|-|-|
+|increase count|||||
+|login|||||
+|search "a"|||||
+
+### "Project" size (in KB)
+|Normal Context|Simpler Context|Simpler Context with Extras|Zustand|Zustand with Extras|
+|-|-|-|-|-|
+|||||
+
 
 ## Normal Context
 This is using a pure context implementation with useReducer.
