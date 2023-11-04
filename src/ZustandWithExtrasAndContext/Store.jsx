@@ -1,37 +1,31 @@
-import { useState, useCallback } from 'react';
-import { createContext, useContextSelector } from 'use-context-selector';
+import create from 'zustand';
+import { useMemo } from 'react';
+import {createContext, useContextSelector} from "use-context-selector";
 
-const initialState = {
-  title: '',
-  unchanged: 'unchanged value'
-};
+const createUseStore = () => create((set) => ({
+  count: 0,
+  increaseCount: (num = 1) => set((state) => ({ count: state.count + num })),
+  decreaseCount: (num = 1) => set((state) => ({ count: state.count - num })),
 
-function useStore() {
-  const [count, setCount] = useState(0);
-  const [user, setUser] = useState('');
-  const [filters, setFilters] = useState(initialState);
+  user: '',
+  login: (user = 'klaus') => set({ user }),
+  logout: () => set({ user: '' }),
 
-  return {
-    count,
-    increaseCount: useCallback((num = 1) => setCount(count + num), [count]),
-    decreaseCount: useCallback((num = 1) => setCount(count - num), [count]),
-
-    user,
-    login: useCallback((user = 'klaus') => setUser(user), []),
-    logout: useCallback(() => setUser(''), []),
-
-    filters,
-    searchTitle: useCallback((title) => setFilters((filters) => ({ ...filters, title })), [])
-  };
-}
+  filters: {
+    title: '',
+    unchanged: 'unchanged value'
+  },
+  searchTitle: (title) => set((state) => ({ filters: { ...state.filters, title } }))
+}));
 
 const StoreContext = createContext(null);
 
 export function ContextProvider({ children }) {
-  const store = useStore();
-  return (
-    <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
-  );
+    const useStore = useMemo(() => createUseStore(), []);
+    const store = useStore();
+    return (
+        <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
+    );
 }
 
 export const useStoreContext = (callback) => useContextSelector(StoreContext, callback);
