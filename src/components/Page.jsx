@@ -5,7 +5,7 @@ import SiblingComp from './SiblingComp';
 
 function Page({ children }) {
   return (
-    <>
+    <div>
       <div className="App">
         <h1>React</h1>
         <div className="card">
@@ -14,7 +14,7 @@ function Page({ children }) {
         </div>
       </div>
       <SiblingComp />
-    </>
+    </div>
   );
 }
 
