@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useReducer } from 'react';
+import {useLogRenders, useStoreRenderCount} from "../hooks/useLogRenders";
 
 const DispatchContext = createContext({});
 const StateContext = createContext({});
@@ -74,6 +75,8 @@ const myState = {
 
 export function ContextProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, myState);
+  useStoreRenderCount('NormalContext', 'ContextProvider');
+  useLogRenders();
 
   return (
     <StateContext.Provider value={state}>

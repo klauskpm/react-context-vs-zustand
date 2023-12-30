@@ -1,4 +1,7 @@
+import {useStoreRenderCount} from "../hooks/useLogRenders";
+
 function LogInOutButtons({ onLoginClick, onLogoutClick }) {
+  useStoreRenderCount('Components', 'LogInOutButtons');
   return (
     <div>
       <button onClick={onLoginClick}>Login</button>

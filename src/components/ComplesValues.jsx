@@ -1,4 +1,8 @@
+import {useStoreRenderCount} from "../hooks/useLogRenders";
+
 function ComplexValues({ unchanged, count }) {
+    useStoreRenderCount('Components', 'ComplexValues');
+
     return (
         <div>
         <p>Complex value:</p>

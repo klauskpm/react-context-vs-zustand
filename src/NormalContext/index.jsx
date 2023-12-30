@@ -10,6 +10,9 @@ function NormalContext() {
         <Page>
           <Main />
         </Page>
+        <Page>
+          <Main />
+        </Page>
       </FlexRow>
     </ContextProvider>
   );
