@@ -9,7 +9,7 @@ export const useStoreRenderCount = (module, componentName) => {
   storeRenderCounts[module][componentName] = renders.current;
 
   renders.current++;
-}
+};
 
 export const useLogRenders = () => {
   useEffect(() => {
@@ -21,4 +21,4 @@ export const useLogRenders = () => {
       console.groupEnd();
     });
   });
-}
+};
