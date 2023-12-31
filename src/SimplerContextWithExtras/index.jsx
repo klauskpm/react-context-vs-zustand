@@ -1,13 +1,19 @@
 import Page from '../components/Page';
 import { ContextProvider } from './Store';
 import Main from './Main';
+import {FlexRow} from "../components/FlexRow";
 
 function SimplerContext() {
   return (
     <ContextProvider>
-      <Page>
-        <Main />
-      </Page>
+      <FlexRow>
+        <Page>
+          <Main />
+        </Page>
+        <Page>
+          <Main />
+        </Page>
+      </FlexRow>
     </ContextProvider>
   );
 }
