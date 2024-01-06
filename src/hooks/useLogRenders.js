@@ -1,14 +1,19 @@
-import {useEffect, useRef} from "react";
+import {useEffect} from "react";
 
 const storeRenderCounts = {};
 export const useStoreRenderCount = (module, componentName) => {
-  const renders = useRef(0);
   if (!storeRenderCounts[module]) {
     storeRenderCounts[module] = {};
   }
-  storeRenderCounts[module][componentName] = renders.current;
+  if (!storeRenderCounts[module][componentName]) {
+    storeRenderCounts[module][componentName] = {triggered: 0, finished: 0};
+  }
 
-  renders.current++;
+  storeRenderCounts[module][componentName].triggered++;
+
+  useEffect(() => {
+    storeRenderCounts[module][componentName].finished++;
+  });
 };
 
 export const useLogRenders = () => {
