@@ -1,22 +1,5 @@
 import {useEffect} from "react";
-
-const storedRenderCounts = {};
-const logRenders = () => {
-  const modules = Object.keys(storedRenderCounts);
-  modules.forEach(module => {
-    console.group(module)
-    console.table(storedRenderCounts[module]);
-    console.groupEnd();
-  });
-};
-
-const resetLogs = () => {
-  Object.keys(storedRenderCounts).forEach(module => {
-    Object.keys(storedRenderCounts[module]).forEach(componentName => {
-      storedRenderCounts[module][componentName] = {triggered: 0, finished: 0};
-    });
-  });
-};
+import {logRenders, storedRenderCounts} from "../Performance/renderCount";
 
 export const useStoreRenderCount = (module, componentName) => {
   if (!storedRenderCounts[module]) {
@@ -38,7 +21,3 @@ export const useLogRenders = () => {
     logRenders();
   });
 };
-
-window.storedRenderCounts = storedRenderCounts;
-window.logRenders = logRenders;
-window.resetLogs = resetLogs;
