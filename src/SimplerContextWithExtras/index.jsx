@@ -3,7 +3,7 @@ import { ContextProvider } from './Store';
 import Main from './Main';
 import {FlexRow} from "../components/FlexRow";
 
-function SimplerContext() {
+function SimplerContextWithExtras() {
   return (
     <ContextProvider>
       <FlexRow>
@@ -18,4 +18,4 @@ function SimplerContext() {
   );
 }
 
-export default SimplerContext;
+export default SimplerContextWithExtras;
