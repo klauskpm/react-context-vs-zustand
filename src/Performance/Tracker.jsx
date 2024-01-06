@@ -1,7 +1,7 @@
 import './Tracker.css';
 
 import {useEffect, useState} from "react";
-import {storedRenderCounts, resetLogs} from "../Performance/renderCount";
+import {storedRenderCounts, resetLogs} from "./renderCount";
 
 export const Tracker = () => {
   const [isOpen, setIsOpen] = useState(false);

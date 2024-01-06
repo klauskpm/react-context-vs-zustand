@@ -8,7 +8,7 @@ import App from './SimplerContextWithExtras'
 // import App from './ZustandWithExtras'
 // import App from './ZustandWithExtrasAndContext'
 import reportWebVitals from './reportWebVitals';
-import {Tracker} from "./components/Tracker";
+import {Tracker} from "./Performance/Tracker";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
