@@ -12,13 +12,13 @@ function Main() {
   return (
     <>
       <p>Simpler Context with Extras</p>
-      <Increaser />
-      <Counter />
-      <UserButtons />
+      <Increaser/>
+      <Counter/>
+      <UserButtons/>
       <User/>
-      <SearchInput />
-      <Title />
-      <ComplexValues />
+      <SearchInput/>
+      <Title/>
+      <ComplexValues/>
     </>
   );
 }

@@ -1,5 +1,5 @@
-import { useState, useCallback } from 'react';
-import { createContext, useContextSelector } from 'use-context-selector';
+import {useState, useCallback} from 'react';
+import {createContext, useContextSelector} from 'use-context-selector';
 import {useLogRenders, useStoreRenderCount} from "../hooks/useLogRenders";
 import {useMeasureRender} from "../hooks/useMeasureRender";
 
@@ -23,13 +23,13 @@ function useStore() {
     logout: useCallback(() => setUser(''), []),
 
     filters,
-    searchTitle: useCallback((title) => setFilters((filters) => ({ ...filters, title })), [])
+    searchTitle: useCallback((title) => setFilters((filters) => ({...filters, title})), [])
   };
 }
 
 const StoreContext = createContext(null);
 
-export function ContextProvider({ children }) {
+export function ContextProvider({children}) {
   const store = useStore();
   useStoreRenderCount('SimplerContextWithExtras', 'ContextProvider');
   useLogRenders();
