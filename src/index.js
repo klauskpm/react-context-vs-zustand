@@ -8,11 +8,13 @@ import App from './SimplerContextWithExtras'
 // import App from './ZustandWithExtras'
 // import App from './ZustandWithExtrasAndContext'
 import reportWebVitals from './reportWebVitals';
+import {Tracker} from "./components/Tracker";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Tracker/>
   </React.StrictMode>
 );
 
