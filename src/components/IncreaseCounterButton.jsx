@@ -1,9 +1,10 @@
 import {useStoreRenderCount} from "../hooks/useLogRenders";
+import {borderStyle} from "../styles/border";
 
 function IncreaseCounterButton({ onClick }) {
   useStoreRenderCount('Components', 'IncreaseCounterButton');
   return (
-    <button onClick={onClick}>Increase count!</button>
+    <button onClick={onClick} style={borderStyle}>Increase count!</button>
   );
 }
 

@@ -1,17 +1,18 @@
 import {useStoreRenderCount} from "../hooks/useLogRenders";
+import {borderStyle} from "../styles/border";
 
-function ComplexValues({ unchanged, count }) {
-    useStoreRenderCount('Components', 'ComplexValues');
+function ComplexValues({unchanged, count}) {
+  useStoreRenderCount('Components', 'ComplexValues');
 
-    return (
-        <div>
-        <p>Complex value:</p>
-        <ul>
-            <li>{unchanged}</li>
-            <li>{count}</li>
-        </ul>
-        </div>
-    );
+  return (
+    <div style={borderStyle}>
+      <p>Complex value:</p>
+      <ul>
+        <li>{unchanged}</li>
+        <li>{count}</li>
+      </ul>
+    </div>
+  );
 }
 
 export default ComplexValues;

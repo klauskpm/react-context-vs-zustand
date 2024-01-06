@@ -3,11 +3,12 @@ import './Page.css';
 import ChildComp from './ChildComp';
 import SiblingComp from './SiblingComp';
 import {useStoreRenderCount} from "../hooks/useLogRenders";
+import {borderStyle} from "../styles/border";
 
 function Page({ children }) {
   useStoreRenderCount('Components', 'Page');
   return (
-    <div>
+    <div style={borderStyle}>
       <div className="App">
         <h1>React</h1>
         <div className="card">
