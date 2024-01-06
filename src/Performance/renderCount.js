@@ -1,6 +1,6 @@
 /**
  * This object is used to store the render counts of all components
- * @type {{[string]: {triggered: number, finished: number}}}
+ * @type {{[string]: {[string]: {triggered: number, finished: number}}}}
  */
 export let storedRenderCounts = {};
 export const logRenders = () => {
