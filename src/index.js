@@ -7,8 +7,8 @@ import './index.css';
 // import App from './SimplerContext/Individual'
 // import App from './SimplerContextWithExtras/Shared'
 // import App from './SimplerContextWithExtras/Individual'
-// import App from './Zustand'
-import App from './ZustandWithContext'
+import App from './Zustand'
+// import App from './ZustandWithContext'
 // import App from './ZustandWithExtras'
 // import App from './ZustandWithExtrasAndContext'
 import reportWebVitals from './reportWebVitals';
