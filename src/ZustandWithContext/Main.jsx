@@ -12,7 +12,7 @@ function Main() {
 
   return (
     <>
-      <p>Zustand</p>
+      <p>Zustand wit Context</p>
       <Increaser />
       <Counter />
       <UserButtons />
