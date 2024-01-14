@@ -5,8 +5,11 @@ import UserButtons from './UserButtons';
 import SearchInput from './SearchInput';
 import ComplexValues from './ComplesValues';
 import Title from './Title';
+import {useResetStore} from "../Zustand/Store";
 
 function Main() {
+  useResetStore();
+
   return (
     <>
       <p>Zustand With Extras and Context</p>

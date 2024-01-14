@@ -1,21 +1,24 @@
 import create from 'zustand';
-import { useMemo } from 'react';
+import {useEffect, useMemo} from 'react';
 import {createContext, useContextSelector} from "use-context-selector";
 
-const createUseStore = () => create((set) => ({
+const initialState = {
   count: 0,
-  increaseCount: (num = 1) => set((state) => ({ count: state.count + num })),
-  decreaseCount: (num = 1) => set((state) => ({ count: state.count - num })),
-
   user: '',
-  login: (user = 'klaus') => set({ user }),
-  logout: () => set({ user: '' }),
-
   filters: {
     title: '',
     unchanged: 'unchanged value'
   },
-  searchTitle: (title) => set((state) => ({ filters: { ...state.filters, title } }))
+};
+
+const createUseStore = () => create((set) => ({
+  ...initialState,
+  increaseCount: (num = 1) => set((state) => ({ count: state.count + num })),
+  decreaseCount: (num = 1) => set((state) => ({ count: state.count - num })),
+  login: (user = 'klaus') => set({ user }),
+  logout: () => set({ user: '' }),
+  searchTitle: (title) => set((state) => ({ filters: { ...state.filters, title } })),
+  reset: () => set(initialState),
 }));
 
 const StoreContext = createContext(null);
@@ -45,3 +48,12 @@ export const useComposedValue = () => useStoreContext((state) => ({
   unchanged: state.filters.unchanged,
   count: state.count
 }));
+
+export const useResetStore = () => {
+  const reset = useStoreContext((state) => state.reset);
+
+  useEffect(() => {
+    return () => reset();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+};
