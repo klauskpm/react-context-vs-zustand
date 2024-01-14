@@ -5,7 +5,7 @@ import UserButtons from './UserButtons';
 import SearchInput from './SearchInput';
 import ComplexValues from './ComplesValues';
 import Title from './Title';
-import {useResetStore} from "../Zustand/Store";
+import {useResetStore} from "./Store";
 
 function Main() {
   useResetStore();
