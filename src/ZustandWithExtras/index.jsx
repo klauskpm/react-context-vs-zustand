@@ -1,11 +1,17 @@
 import Page from '../components/Page';
 import Main from './Main';
+import {FlexRow} from "../components/FlexRow";
 
 function Zustand() {
   return (
-    <Page>
-      <Main />
-    </Page>
+    <FlexRow>
+      <Page>
+        <Main />
+      </Page>
+      <Page>
+        <Main />
+      </Page>
+    </FlexRow>
   );
 }
 
