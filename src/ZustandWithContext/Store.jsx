@@ -1,4 +1,4 @@
-import create from 'zustand';
+import { create } from 'zustand';
 import {useEffect, useMemo} from "react";
 import {createContext, useContextSelector} from "use-context-selector";
 import {useStoreRenderCount} from "../hooks/useLogRenders";

@@ -1,7 +1,10 @@
-import create from 'zustand';
+import { create } from 'zustand';
 import {useEffect, useMemo} from 'react';
 import {createContext, useContextSelector} from "use-context-selector";
 import {useStoreRenderCount} from "../hooks/useLogRenders";
+import {useShallow} from "zustand/react/shallow";
+import {devtools} from "zustand/middleware";
+import {immer} from "zustand/middleware/immer";
 
 const initialState = {
   count: 0,
@@ -12,15 +15,19 @@ const initialState = {
   },
 };
 
-const createUseStore = () => create((set) => ({
+const createUseStore = () => create(devtools(immer((set) => ({
   ...initialState,
-  increaseCount: (num = 1) => set((state) => ({ count: state.count + num })),
-  decreaseCount: (num = 1) => set((state) => ({ count: state.count - num })),
-  login: (user = 'klaus') => set({ user }),
-  logout: () => set({ user: '' }),
-  searchTitle: (title) => set((state) => ({ filters: { ...state.filters, title } })),
-  reset: () => set(initialState),
-}));
+  increaseCount: (num = 1) => set((state) => { state.count += num }, false, 'increaseCount'),
+  decreaseCount: (num = 1) => set((state) => { state.count -= num }, false, 'decreaseCount'),
+  login: (user = 'klaus') => set({ user }, false, 'login'),
+  logout: () => set({ user: '' }, false, 'logout'),
+  searchTitle: (title) => set(
+    (state) => { state.filters.title = title },
+    false,
+    'searchTitle'
+  ),
+  reset: () => set(initialState, false, 'reset'),
+}))));
 
 const StoreContext = createContext(null);
 
@@ -46,10 +53,12 @@ export const useLogout = () => useStoreContext((state) => state.logout);
 export const useFilteredTitle = () => useStoreContext((state) => state.filters.title);
 export const useSearchTitle = () => useStoreContext((state) => state.searchTitle);
 
-export const useComposedValue = () => useStoreContext((state) => ({
-  unchanged: state.filters.unchanged,
-  count: state.count
-}));
+export const useComposedValue = () => useStoreContext(
+  useShallow((state) => ({
+    unchanged: state.filters.unchanged,
+    count: state.count
+  }))
+);
 
 export const useResetStore = () => {
   const reset = useStoreContext((state) => state.reset);

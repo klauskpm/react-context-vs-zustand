@@ -1,8 +1,8 @@
-import create  from 'zustand';
-import shallow  from 'zustand/shallow';
-import { immer } from 'zustand/middleware/immer';
-import { devtools } from 'zustand/middleware';
+import {create} from 'zustand';
+import {immer} from 'zustand/middleware/immer';
+import {devtools} from 'zustand/middleware';
 import {useEffect} from "react";
+import {useShallow} from "zustand/react/shallow";
 
 const initialState = {
   count: 0,
@@ -38,10 +38,12 @@ export const useLogout = () => useStore((state) => state.logout);
 export const useFilteredTitle = () => useStore((state) => state.filters.title);
 export const useSearchTitle = () => useStore((state) => state.searchTitle);
 
-export const useComposedValue = () => useStore((state) => ({
-  unchanged: state.filters.unchanged,
-  count: state.count
-}), shallow);
+export const useComposedValue = () => useStore(
+  useShallow((state) => ({
+    unchanged: state.filters.unchanged,
+    count: state.count
+  }))
+);
 
 export const useResetStore = () => {
   const reset = useStore((state) => state.reset);
