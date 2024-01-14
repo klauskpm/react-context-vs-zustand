@@ -1,6 +1,7 @@
 import create from 'zustand';
 import {useEffect, useMemo} from "react";
 import {createContext, useContextSelector} from "use-context-selector";
+import {useStoreRenderCount} from "../hooks/useLogRenders";
 
 const initialState = {
   count: 0,
@@ -26,6 +27,7 @@ const StoreContext = createContext(null);
 export function ContextProvider({ children }) {
   const useStore = useMemo(() => createUseStore(), []);
   const store = useStore();
+  useStoreRenderCount('ZustandWithContext', 'ContextProvider');
   return (
     <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
   );
