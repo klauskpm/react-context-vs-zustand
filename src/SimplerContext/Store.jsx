@@ -1,6 +1,5 @@
-import { useState, useCallback, createContext, useContext } from 'react';
-import {useLogRenders, useStoreRenderCount} from "../hooks/useLogRenders";
-import {useMeasureRender} from "../hooks/useMeasureRender";
+import {createContext, useCallback, useContext, useState} from 'react';
+import {useStoreRenderCount} from "../hooks/useLogRenders";
 
 const initialState = {
   title: '',
@@ -31,8 +30,6 @@ const StoreContext = createContext(null);
 export function ContextProvider({ children }) {
   const store = useStore();
   useStoreRenderCount('SimplerContext', 'ContextProvider');
-  useLogRenders();
-  useMeasureRender('SimplerContext', 'ContextProvider');
 
   return (
     <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
