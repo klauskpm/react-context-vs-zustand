@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './NormalContext/Shared'
-// import App from './NormalContext/Individual'
-// import App from './SimplerContext/Shared'
-// import App from './SimplerContext/Individual'
-// import App from './SimplerContextWithExtras/Shared'
-// import App from './SimplerContextWithExtras/Individual'
-// import App from './Zustand'
-// import App from './ZustandWithContext'
-// import App from './ZustandWithExtras'
-import App from './ZustandWithExtrasAndContext'
+// import App from './examples/NormalContext/Shared'
+// import App from './examples/NormalContext/Individual'
+// import App from './examples/SimplerContext/Shared'
+// import App from './examples/SimplerContext/Individual'
+// import App from './examples/SimplerContextWithExtras/Shared'
+// import App from './examples/SimplerContextWithExtras/Individual'
+// import App from './examples/Zustand'
+// import App from './examples/ZustandWithContext'
+// import App from './examples/ZustandWithExtras'
+import App from './examples/ZustandWithExtrasAndContext'
 import reportWebVitals from './reportWebVitals';
 import {Tracker} from "./Performance/Tracker";
 
