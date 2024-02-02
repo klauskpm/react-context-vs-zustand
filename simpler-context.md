@@ -4,17 +4,17 @@ This is using a pure context implementation, but this time with useState and use
 ## Performance by actions
 
 ### increase count
-[Profile file](/packages-analyze/simpler-context/profile-increase-count.json) to upload to React DevTools
-![](/packages-analyze/simpler-context/profile-increase-count.png)
+[Profile file](/packages-analyze/simpler-context-individual/profile-increase-count.json) to upload to React DevTools
+![](/packages-analyze/simpler-context-individual/profile-increase-count.png)
 
 ### login
-[Profile file](/packages-analyze/simpler-context/profile-login.json) to upload to React DevTools
-![](/packages-analyze/simpler-context/profile-login.png)
+[Profile file](/packages-analyze/simpler-context-individual/profile-login.json) to upload to React DevTools
+![](/packages-analyze/simpler-context-individual/profile-login.png)
 
 ### search "a"
-[Profile file](/packages-analyze/simpler-context/profile-search-title.json) to upload to React DevTools
-![](/packages-analyze/simpler-context/profile-search-title.png)
+[Profile file](/packages-analyze/simpler-context-individual/profile-search-title.json) to upload to React DevTools
+![](/packages-analyze/simpler-context-individual/profile-search-title.png)
 
 ## Project total size
 
-![](/packages-analyze/simpler-context/size.png)
+![](/packages-analyze/simpler-context-individual/size.png)
