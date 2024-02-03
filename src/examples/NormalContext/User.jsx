@@ -1,6 +1,6 @@
 import DisplayUser from '../../components/User';
 import { useContextState } from './Store';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function User() {
   useStoreRenderCount('NormalContext', 'User');

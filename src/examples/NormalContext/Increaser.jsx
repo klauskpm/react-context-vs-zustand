@@ -1,6 +1,6 @@
 import IncreaseCounterButton from '../../components/IncreaseCounterButton';
 import { increaseCount, useContextDispatch } from './Store';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function Increaser() {
   useStoreRenderCount('NormalContext', 'Increaser');

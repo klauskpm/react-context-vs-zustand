@@ -1,6 +1,6 @@
 import OgSearchInput from '../../components/SearchInput';
 import { useContextDispatch, searchTitle } from './Store';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function SearchInput() {
   useStoreRenderCount('NormalContext', 'SearchInput');

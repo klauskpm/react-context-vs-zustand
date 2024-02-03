@@ -5,7 +5,7 @@ import UserButtons from './UserButtons';
 import SearchInput from './SearchInput';
 import ComplexValues from './ComplesValues';
 import Title from './Title';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function Main() {
   useStoreRenderCount('SimplerContext', 'Main');

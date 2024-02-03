@@ -1,6 +1,6 @@
 import IncreaseCounterButton from '../../components/IncreaseCounterButton';
 import { useIncreaseCount } from './Store';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function Increaser() {
   const increaseCount = useIncreaseCount();

@@ -1,7 +1,7 @@
 import OgComplexValues from '../../components/ComplesValues';
 
 import { useContextState } from './Store';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function ComplexValues() {
     useStoreRenderCount('NormalContext', 'ComplexValues');

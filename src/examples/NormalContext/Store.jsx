@@ -1,5 +1,5 @@
 import React, {createContext, useContext, useReducer} from 'react';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 const DispatchContext = createContext({});
 const StateContext = createContext({});

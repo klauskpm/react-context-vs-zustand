@@ -1,7 +1,7 @@
 import OgComplexValues from '../../components/ComplesValues';
 
 import { useComposedValue } from './Store';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function ComplexValues() {
     const { unchanged, count } = useComposedValue();

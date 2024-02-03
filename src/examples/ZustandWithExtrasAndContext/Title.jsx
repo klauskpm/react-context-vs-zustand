@@ -1,6 +1,6 @@
 import OgTitle from '../../components/Title';
 import { useFilteredTitle } from './Store';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function Title() {
     const title = useFilteredTitle();

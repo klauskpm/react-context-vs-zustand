@@ -6,7 +6,7 @@ import SearchInput from './SearchInput';
 import ComplexValues from './ComplesValues';
 import Title from './Title';
 import {useResetStore} from "./Store";
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function Main() {
   useResetStore();

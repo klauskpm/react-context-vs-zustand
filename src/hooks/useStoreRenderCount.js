@@ -1,5 +1,5 @@
 import {useEffect} from "react";
-import {logRenders, storedRenderCounts} from "../Performance/renderCount";
+import {storedRenderCounts} from "../Performance/renderCount";
 
 export const useStoreRenderCount = (module, componentName) => {
   if (!storedRenderCounts[module]) {
@@ -13,11 +13,5 @@ export const useStoreRenderCount = (module, componentName) => {
 
   useEffect(() => {
     storedRenderCounts[module][componentName].finished++;
-  });
-};
-
-export const useLogRenders = () => {
-  useEffect(() => {
-    logRenders();
   });
 };

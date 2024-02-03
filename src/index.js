@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './examples/NormalContext/Shared'
+import App from './examples/NormalContext/Shared'
 // import App from './examples/NormalContext/Individual'
 // import App from './examples/SimplerContext/Shared'
 // import App from './examples/SimplerContext/Individual'
@@ -10,7 +10,7 @@ import './index.css';
 // import App from './examples/Zustand'
 // import App from './examples/ZustandWithContext'
 // import App from './examples/ZustandWithExtras'
-import App from './examples/ZustandWithExtrasAndContext'
+// import App from './examples/ZustandWithExtrasAndContext'
 import reportWebVitals from './reportWebVitals';
 import {Tracker} from "./Performance/Tracker";
 

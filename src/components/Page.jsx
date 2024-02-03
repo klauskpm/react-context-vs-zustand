@@ -2,7 +2,7 @@ import './Page.css';
 
 import ChildComp from './ChildComp';
 import SiblingComp from './SiblingComp';
-import {useStoreRenderCount} from "../hooks/useLogRenders";
+import {useStoreRenderCount} from "../hooks/useStoreRenderCount";
 import {borderStyle} from "../styles/border";
 
 function Page({ children }) {

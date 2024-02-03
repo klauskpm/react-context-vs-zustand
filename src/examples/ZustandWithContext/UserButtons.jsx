@@ -1,6 +1,6 @@
 import LogInOutButtons from '../../components/LogInOutButtons';
 import { useLogin, useLogout } from './Store';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function UserButtons() {
   const login = useLogin();

@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import {useEffect, useMemo} from 'react';
 import {createContext, useContextSelector} from "use-context-selector";
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 import {useShallow} from "zustand/react/shallow";
 import {devtools} from "zustand/middleware";
 import {immer} from "zustand/middleware/immer";

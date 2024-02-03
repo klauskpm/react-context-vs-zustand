@@ -1,6 +1,6 @@
 import LogInOutButtons from '../../components/LogInOutButtons';
 import { useContextDispatch, login, logout } from './Store';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function UserButtons() {
   useStoreRenderCount('NormalContext', 'UserButtons');

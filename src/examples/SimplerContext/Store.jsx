@@ -1,5 +1,5 @@
 import {createContext, useCallback, useContext, useState} from 'react';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 const initialState = {
   title: '',

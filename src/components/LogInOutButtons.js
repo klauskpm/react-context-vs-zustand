@@ -1,4 +1,4 @@
-import {useStoreRenderCount} from "../hooks/useLogRenders";
+import {useStoreRenderCount} from "../hooks/useStoreRenderCount";
 import {borderStyle} from "../styles/border";
 
 function LogInOutButtons({ onLoginClick, onLogoutClick }) {

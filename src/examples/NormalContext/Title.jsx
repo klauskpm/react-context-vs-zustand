@@ -1,6 +1,6 @@
 import OgTitle from '../../components/Title';
 import { useContextState } from './Store';
-import {useStoreRenderCount} from "../../hooks/useLogRenders";
+import {useStoreRenderCount} from "../../hooks/useStoreRenderCount";
 
 function Title() {
     useStoreRenderCount('NormalContext', 'Title');
