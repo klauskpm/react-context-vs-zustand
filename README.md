@@ -75,5 +75,5 @@ TBD
 ---
 
 > **Old tests and results**  
-> If you wish to see the old test results, please check the [old README](README-old.md).
+> If you wish to see the old test results, please check [v1.0.0](https://github.com/klauskpm/react-context-vs-zustand/tree/v1.0.0).
 > There you will find instructions to see the old code, and see the results generated at the time.
